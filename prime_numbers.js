@@ -1,17 +1,11 @@
 function isPrime (n){
-    for(let i=2;i<n;i++){
-        if(n%i != 0){
-            console.log("true");
-            return 1;
+    int num = sqrt(n);
+    for(let i=1;i<n;i++){
+        if(num%i == 0){
+            return false;
         }
     }
-    
-    if(n == 2){
-        console.log("true");
-        return 1;
-    }
-
-    console.log("false");
+   return true;
 }
 
 isPrime(311);
